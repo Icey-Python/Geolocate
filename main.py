@@ -2,7 +2,7 @@ import folium
 from geopy.geocoders import Nominatim 
 
 # Create map
-my_map = folium.Map(location=[0.2983, 35.8035], zoom_start=500)
+my_map = folium.Map(location=[45.5236, -122.6750], zoom_start=500)
 
 # Add OSM tile layer
 folium.TileLayer(
@@ -14,7 +14,7 @@ folium.TileLayer(
 geolocator = Nominatim(user_agent="my_application")
 
 # Get location 
-location = geolocator.geocode("Elburgon")
+location = geolocator.geocode("Portland")
 
 # Add marker
 folium.Marker(
